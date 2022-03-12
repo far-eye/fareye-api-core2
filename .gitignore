@@ -1,0 +1,11 @@
+*/*.iml
+*.iml
+*.zip
+target/*
+/.idea/
+*/target/*
+*/allure-report/*
+*/logs/*
+*/allure-results/*
+*/screenshot/*
+*/extent-report/*
