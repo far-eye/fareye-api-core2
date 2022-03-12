@@ -43,6 +43,7 @@ public class PinotDBUtils {
 
 
     public String getStringColumnValue(String query, String columnName) {
+        log.info("Query: "+query);
         Request pinotClientRequest = new Request("sql", query);
         ResultSetGroup pinotResultSetGroup = connection.execute(pinotClientRequest);
         ResultSet resultSet = pinotResultSetGroup.getResultSet(0);
